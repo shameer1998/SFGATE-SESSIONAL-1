@@ -1,1 +1,1 @@
-<?php include_once("./myFirstPage.html")?>
+<?php include_once("./web.html")?>
