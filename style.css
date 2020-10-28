@@ -1,0 +1,627 @@
+/* ===================All Document===========================*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+/* a tags */
+
+/* p tags */
+
+/* Header Data*/
+/*=============================================================Header Files=======================================*/
+.header {
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+    height: 70px;
+ 
+}
+
+
+
+.title {
+  font-family: 'Times New Roman', Times, serif
+    color:red;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+/* Menu Styling*/
+.menu {
+    flex: 1;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+   
+}
+
+.menu ul{
+    color: black;
+}
+
+.menu ul li{
+    font-size: 12px;
+    text-decoration: red;
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+}
+/*============================================================Horizontal Navigation Menu bar===========================================
+/* navigation menu*/
+.mynavbar {
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top: solid grey;
+    border-bottom: solid grey;
+}
+.mynavbar ul {
+ text-align: center;
+}
+
+.mynavbar ul li {
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mynavbar ul li a {
+    color: black;
+    text-decoration: red;
+}
+
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+
+  /*======================================= The Overlay (background) ====================*/
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Black fallback color */
+    opacity: 0.95;
+  
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: height 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+
+
+  /*====================================election news============================*/
+
+
+  .my-container {
+    background-color:lightgrey;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-top: dotted black 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 10px;
+
+  }
+
+  .my-box {
+    padding-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    
+  }
+
+  .my-box a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-small;
+    text-align: justify;
+  }
+
+  .my-box img {
+    float: left;
+    max-width: 100px;
+    height: 80px;
+    margin-right: 5px;
+  }
+
+  .my-box li {
+    list-style: none;
+    font-size: small;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  
+  .my-box li::before {
+    content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  }
+
+
+
+
+  /*=============================Footer================================== */
+
+  footer {
+    block-size: 400px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .text-uppercase {
+    font-size: large;
+    font-weight: bold;
+  }
+  .my-copyright {
+    bottom: 0;
+    position: relative;
+    float: left;
+    padding-left: 20px;
+  }
+
+  .my-copyright span{
+    
+  }
+  .foottitle {
+    color:red;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+  
+  }
+  
+  .footicons ul li{
+    margin-left: 10px;
+    display: inline;
+    padding: 5px;
+  } 
+  .footicons a{
+    text-decoration: none;
+  }
+
+
+  /*===========================Breaking News Box==========================*/
+
+  .breaking-news {
+    margin-top: 10%;
+    background-color:maroon;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    block-size: 150px;
+    
+  
+  }
+
+  .breaking-news img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    float: left;
+    max-width: 150px;
+    height: 150px;
+  }
+  .breaking-news li {
+    list-style-type: none;
+    text-decoration-line: bal;
+    text-decoration: none;
+    padding-top: 50px;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  
+
+
+
+
+
+  /*==============================Video Container========================*/
+  .vid-container {
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  bottom: 10%;
+  right: 0;
+  width: 60%;
+  height: 70%;
+}
+
+
+
+
+/*=======================================COVID NEWS==============================================*/
+.corona-box {
+  margin-top: 50px;
+}
+
+.covid-text {
+  position: absolute;
+  background-color: white;
+  width: 85%;
+  margin-top: -70px;
+}
+
+
+
+/*========================================LATEST NEWS===========================*/
+
+
+
+
+      .latestnews {
+        margin: 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 5px;
+        
+      }
+      
+      .my-latestcol {
+        padding-left: 20px;
+      }
+      .my-latestcol img{
+        float: right;
+        height: 60px;
+        width: 60px;
+      
+      }
+      
+      .my-latestcol ul{
+      border-right: dotted black 1px;
+      list-style-type: none;
+      padding-right: 10px;
+        
+      }
+      
+        .my-latestcol h3{
+          top: 0;
+        font-weight: bolder;
+          
+        }
+      
+        .my-latestcol li{
+          min-height: 100px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px; 
+          border-top: solid lightgrey 1px;
+      
+          }
+      
+          .my-latestcol li p{
+            font-size: 13px;
+            width: 70%;
+            float: left;
+           
+            }
+    
+
+
+
+
+/*=================================NEWS Column==========================================================*/
+
+
+.news {
+  display: grid;
+ 
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 5px;
+}
+.newstitle {
+  width: 60%;
+  block-size: 500px;
+  margin: 10%;
+  border: solid black 1px;
+}
+
+.newscol {
+  padding-top: 30%;
+}
+
+.newscol ul li{
+  list-style: none;
+margin-bottom: 100px;
+  margin-left: 10%;
+}
+
+.newscol ul {
+  bottom: 0;
+}
+.newstitle h3 {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+.news li::before {
+  content: "\2022";
+color: red;
+font-weight: bold;
+display: inline-block; 
+width: 1em;
+}
+
+
+/*========================================TRAVEL NEWS===========================*/
+
+/*
+.travel {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 5px;
+  
+}
+
+.travelcol{
+  padding-left: 20px;
+}
+.travelcol img{
+  float: right;
+  height: 60px;
+  width: 60px;
+
+}
+
+.travelcol ul{
+  border-right: dotted black 1px;
+  list-style-type: none;
+  padding-right: 10px;
+  
+}
+
+  .travelcol h3{
+    top: 0;
+  font-weight: bolder;
+    
+  }
+
+  .travelcol li{
+    height: px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-top: solid lightgrey 1px;
+
+    }
+
+.travelmid img {
+  width: 100%;
+  height: 500px;
+  
+}
+.travelcol p{
+  font-size: 13px;
+  width: 70%;
+  float: left;
+
+
+}*/
+.travel {
+  border-top: dotted gray 1px;
+  margin: 10%;
+  display: flex;
+ 
+  grid-gap: 5px;
+  
+}
+
+.travelcol {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.travelcol img{
+  float: right;
+  height: 60px;
+  width: 60px;
+
+}
+
+.travelcol ul{
+list-style-type: none;
+padding-right: 10px;s
+  
+}
+
+  .travelcol h3{
+    top: 0;
+  font-weight: bolder;
+    
+  }
+
+  .travelcol li{
+    min-height: 100px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-top: solid lightgrey 1px;
+
+    }
+
+    .travelcol p{
+      font-size: 13px;
+      width: 70%;
+      float: left;
+     
+      }
+
+      .travelmid img {
+        padding-top: 20px;
+        width: 500px;
+        height: 300px;
+        
+      }
+
+      .travelmid {
+        flex: 3;
+        padding-top: 50px;
+      }
+
+
+  .travelmid p {
+    font-size: 12px;
+    color: gray;
+  }
+  .travelmid span {
+    font-size: 9px;
+    
+  }
+
+  .wraptext {
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    max-width: 30%;
+    margin-top: -70px;
+  }
+
+/*===========================================latest news 2==============================*/
+
+.latestnews2 {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 5px;
+  
+}
+
+.my-latestcol2 {
+  padding-left: 20px;
+}
+.my-latestcol2 img{
+  
+  height: 100px;
+  width: 100%;
+
+}
+
+.my-latestcol2 ul{
+border-right: dotted black 1px;
+list-style-type: none;
+padding-right: 10px;
+  
+}
+
+  .my-latestcol2 h3{
+    top: 0;
+  font-weight: bolder;
+    
+  }
+
+  .my-latestcol2 li{
+    min-height: 250px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-top: solid lightgrey 1px;
+
+    }
+
+    .my-latestcol p{
+     
+      }
